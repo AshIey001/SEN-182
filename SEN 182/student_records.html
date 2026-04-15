@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 3 - Tables</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #96D4D4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        td:nth-child(even), th:nth-child(even) {
+            background-color: #EAF7F7;
+        }
+
+        tr:hover {
+            background-color: #cde;
+        }
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .first-col {
+            width: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Student Records</h2>
+
+    <table>
+        <tr>
+            <th class="first-col">Full Name</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>....</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Phone</td>
+            <td>Alex Rivera</td>
+            <td>28</td>
+            <td>alex.r@example.com</td>
+        </tr>
+
+        <tr>
+            <td>Jordan Smith</td>
+            <td>34</td>
+            <td>j.smith@example.com</td>
+        </tr>
+
+        <tr>
+            <td>Sam Taylor</td>
+            <td>22</td>
+            <td>staylor@example.com</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
